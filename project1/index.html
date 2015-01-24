@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+	<meta charset="utf-8"/>
+	<title>Project 1</title>
+	<script type="text/javascript" src='jquery-1.11.2.js'></script>
+	<script type="text/javascript" src='code.js'></script>
+	<style type="text/css">
+		canvas{
+			border: 1px solid black;
+			cursor: crosshair;
+		}
+	</style>
+</head>
+<body onload="init();">
+<form>
+	<input type='radio' name='mode' value='pen' checked> pen
+	<input type='radio' name='mode' value='rect'>rectangle
+	<input type='radio' name='mode' value='line'>line
+	<input type='radio' name='mode' value='circle'>circle
+	<button id="clear">clear</button>
+</form>
+<br>
+<canvas id='canvas' width='500' height='500'></canvas><br>
+<form action="#">
+	<input type="radio" name="color" value="#000000" checked>Black
+	<input type="radio" name="color" value="#FF0000">Red
+	<input type="number" min="1" name="size" value="2">
+</form>
+</body>
+</html>
