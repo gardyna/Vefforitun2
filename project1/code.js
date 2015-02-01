@@ -1,9 +1,6 @@
 /*
-TODO: improve pen performance (maybe not possible at current level )
+TODO: improve pen performance ( maybe not possible at current level )
 TODO: Implement Text
-TODO: undo/redo
-TODO: save
-TODO: moar colors
  */
 
 $(document).ready(function(){
@@ -11,6 +8,8 @@ $(document).ready(function(){
 	var ctx = canvas.getContext("2d");
 	var drawing = {
 		shapes: [], // contain all shapes to be drawn
+		redos: [],
+		backround: new Image(),
 		nextShape: "pen", // String indicator for current mode
 		size: 2, // stroke width of current object
 		nextColor: "#000000",
@@ -21,6 +20,7 @@ $(document).ready(function(){
 		DrawAll: function () {
 			this.Clear();
 			ctx.save();
+			ctx.drawImage(this.backround, 0, 0);
 			for(var i = 0; i < this.shapes.length; i++){
 				ctx.strokeStyle = this.shapes[i].color;
 				ctx.lineWidth = this.shapes[i].width;
@@ -38,12 +38,18 @@ $(document).ready(function(){
 
 	};
 
+	var undod = false;
 	var pressed = false;
+	var cleared = false;
 	// event handlers
 
 	$("#canvas").mousedown(function(e){
+		if(undod){
+			drawing.redos = [];
+		}
 		canvas.focus();
 		pressed = true;
+		undod = false;
 		if(drawing.nextShape === "rect"){
 			drawing.current = new Rect(e.clientX - drawing.offX, e.clientY - drawing.offY, drawing.nextColor, drawing.size);
 		}else if(drawing.nextShape === "line"){
@@ -97,6 +103,49 @@ $(document).ready(function(){
 
 	$("input[name='size']").change(function(e){
 		drawing.size = $("input[name='size']").val();
+	});
+
+	$("#save").click(function () {
+		canvas.toBlob(function(blob){
+			saveAs(blob, "image.png");
+		});
+	});
+
+	$("#load").change(function(e){
+		var reader = new FileReader();
+		reader.onload = function(event){
+			var img = new Image();
+			img.onload = function(){
+				canvas.width = img.width;
+				canvas.height = img.height;
+				ctx.drawImage(img,0,0);
+			};
+			img.src = event.target.result;
+			drawing.backround = img;
+		};
+		reader.readAsDataURL(e.target.files[0]);
+	});
+
+	$("#undo").click(function () {
+		drawing.current = new Shape(0, 0, 0, 0);
+		if(!undod){
+			drawing.shapes.pop();
+			undod = true;
+		}
+		drawing.redos.push(drawing.shapes.pop());
+		drawing.DrawAll();
+	});
+
+	$("#redo").click(function(){
+		if(drawing.redos.length != 0){
+			drawing.shapes.push(drawing.redos.pop());
+		}
+		drawing.DrawAll();
+	});
+
+	$("#clear").click(function(){
+		drawing.shapes = [];
+		drawing.Clear();
 	});
 
 	// class constructor functions
