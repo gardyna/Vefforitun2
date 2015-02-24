@@ -1,10 +1,16 @@
-var express = require('express'), 
-app = express(), 
-http = require('http'), 
-server = http.createServer(app),
-io = require('socket.io').listen(server);
+var express = require('express'),
+    cors = require('cors'),
+    app = express();
+app.use(cors());
+var http = require('http'),
+    server = http.createServer(app),
+    io = require('socket.io').listen(server);
+io.set('transports', ['xhr-polling']);
+
+
 
 server.listen(8080);
+
 
 //Store room in an object.
 var rooms = {};

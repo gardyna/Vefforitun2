@@ -1,192 +1,88 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
-1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'install' ]
+1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'socket.io-client@1.0.4.' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.35
-4 verbose node symlink C:\Program Files\nodejs\\node.exe
-5 verbose readDependencies using package.json deps
-6 verbose install where, deps [ 'C:\\Users\\Dagur\\WebstormProjects\\project2',
-6 verbose install   [ 'karma',
-6 verbose install     'protractor',
-6 verbose install     'http-server',
-6 verbose install     'bower',
-6 verbose install     'shelljs',
-6 verbose install     'karma-junit-reporter' ] ]
-7 info preinstall angular-seed@0.0.0
-8 warn package.json karma-chrome-launcher@0.1.7 No README data
-9 warn package.json karma-firefox-launcher@0.1.4 No README data
-10 warn package.json karma-phantomjs-launcher@0.1.4 No README data
-11 verbose readDependencies using package.json deps
-12 verbose already installed skipping karma@~0.10 C:\Users\Dagur\WebstormProjects\project2
-13 verbose already installed skipping protractor@^1.1.1 C:\Users\Dagur\WebstormProjects\project2
-14 verbose already installed skipping http-server@^0.6.1 C:\Users\Dagur\WebstormProjects\project2
-15 verbose already installed skipping bower@^1.3.1 C:\Users\Dagur\WebstormProjects\project2
-16 verbose already installed skipping shelljs@^0.2.6 C:\Users\Dagur\WebstormProjects\project2
-17 verbose already installed skipping karma-junit-reporter@^0.2.2 C:\Users\Dagur\WebstormProjects\project2
-18 silly resolved []
-19 info build C:\Users\Dagur\WebstormProjects\project2
-20 verbose linkStuff [ false, false, false, 'C:\\Users\\Dagur\\WebstormProjects' ]
-21 info linkStuff angular-seed@0.0.0
-22 verbose linkBins angular-seed@0.0.0
-23 verbose linkMans angular-seed@0.0.0
-24 verbose rebuildBundles angular-seed@0.0.0
-25 verbose rebuildBundles [ '.bin',
-25 verbose rebuildBundles   'bower',
-25 verbose rebuildBundles   'http-server',
-25 verbose rebuildBundles   'karma',
-25 verbose rebuildBundles   'karma-chrome-launcher',
-25 verbose rebuildBundles   'karma-coffee-preprocessor',
-25 verbose rebuildBundles   'karma-firefox-launcher',
-25 verbose rebuildBundles   'karma-html2js-preprocessor',
-25 verbose rebuildBundles   'karma-jasmine',
-25 verbose rebuildBundles   'karma-junit-reporter',
-25 verbose rebuildBundles   'karma-phantomjs-launcher',
-25 verbose rebuildBundles   'karma-requirejs',
-25 verbose rebuildBundles   'karma-script-launcher',
-25 verbose rebuildBundles   'protractor',
-25 verbose rebuildBundles   'requirejs',
-25 verbose rebuildBundles   'shelljs' ]
-26 verbose rebuild bundle C:\Users\Dagur\WebstormProjects\project2\node_modules\karma-chrome-launcher
-27 info build C:\Users\Dagur\WebstormProjects\project2\node_modules\karma-chrome-launcher
-28 info preinstall karma-chrome-launcher@0.1.7
-29 verbose linkStuff [ false,
-29 verbose linkStuff   false,
-29 verbose linkStuff   false,
-29 verbose linkStuff   'C:\\Users\\Dagur\\WebstormProjects\\project2\\node_modules' ]
-30 info linkStuff karma-chrome-launcher@0.1.7
-31 verbose linkBins karma-chrome-launcher@0.1.7
-32 verbose linkMans karma-chrome-launcher@0.1.7
-33 verbose rebuildBundles karma-chrome-launcher@0.1.7
-34 info install karma-chrome-launcher@0.1.7
-35 info postinstall karma-chrome-launcher@0.1.7
-36 verbose rebuild bundle C:\Users\Dagur\WebstormProjects\project2\node_modules\karma-coffee-preprocessor
-37 info build C:\Users\Dagur\WebstormProjects\project2\node_modules\karma-coffee-preprocessor
-38 info preinstall karma-coffee-preprocessor@0.1.3
-39 verbose linkStuff [ false,
-39 verbose linkStuff   false,
-39 verbose linkStuff   false,
-39 verbose linkStuff   'C:\\Users\\Dagur\\WebstormProjects\\project2\\node_modules' ]
-40 info linkStuff karma-coffee-preprocessor@0.1.3
-41 verbose linkBins karma-coffee-preprocessor@0.1.3
-42 verbose linkMans karma-coffee-preprocessor@0.1.3
-43 verbose rebuildBundles karma-coffee-preprocessor@0.1.3
-44 verbose rebuildBundles [ '.bin', 'coffee-script' ]
-45 info install karma-coffee-preprocessor@0.1.3
-46 info postinstall karma-coffee-preprocessor@0.1.3
-47 verbose rebuild bundle C:\Users\Dagur\WebstormProjects\project2\node_modules\karma-firefox-launcher
-48 info build C:\Users\Dagur\WebstormProjects\project2\node_modules\karma-firefox-launcher
-49 info preinstall karma-firefox-launcher@0.1.4
-50 verbose linkStuff [ false,
-50 verbose linkStuff   false,
-50 verbose linkStuff   false,
-50 verbose linkStuff   'C:\\Users\\Dagur\\WebstormProjects\\project2\\node_modules' ]
-51 info linkStuff karma-firefox-launcher@0.1.4
-52 verbose linkBins karma-firefox-launcher@0.1.4
-53 verbose linkMans karma-firefox-launcher@0.1.4
-54 verbose rebuildBundles karma-firefox-launcher@0.1.4
-55 info install karma-firefox-launcher@0.1.4
-56 info postinstall karma-firefox-launcher@0.1.4
-57 verbose rebuild bundle C:\Users\Dagur\WebstormProjects\project2\node_modules\karma-html2js-preprocessor
-58 info build C:\Users\Dagur\WebstormProjects\project2\node_modules\karma-html2js-preprocessor
-59 info preinstall karma-html2js-preprocessor@0.1.0
-60 verbose linkStuff [ false,
-60 verbose linkStuff   false,
-60 verbose linkStuff   false,
-60 verbose linkStuff   'C:\\Users\\Dagur\\WebstormProjects\\project2\\node_modules' ]
-61 info linkStuff karma-html2js-preprocessor@0.1.0
-62 verbose linkBins karma-html2js-preprocessor@0.1.0
-63 verbose linkMans karma-html2js-preprocessor@0.1.0
-64 verbose rebuildBundles karma-html2js-preprocessor@0.1.0
-65 info install karma-html2js-preprocessor@0.1.0
-66 info postinstall karma-html2js-preprocessor@0.1.0
-67 verbose rebuild bundle C:\Users\Dagur\WebstormProjects\project2\node_modules\karma-jasmine
-68 info build C:\Users\Dagur\WebstormProjects\project2\node_modules\karma-jasmine
-69 info preinstall karma-jasmine@0.1.5
-70 verbose linkStuff [ false,
-70 verbose linkStuff   false,
-70 verbose linkStuff   false,
-70 verbose linkStuff   'C:\\Users\\Dagur\\WebstormProjects\\project2\\node_modules' ]
-71 info linkStuff karma-jasmine@0.1.5
-72 verbose linkBins karma-jasmine@0.1.5
-73 verbose linkMans karma-jasmine@0.1.5
-74 verbose rebuildBundles karma-jasmine@0.1.5
-75 info install karma-jasmine@0.1.5
-76 info postinstall karma-jasmine@0.1.5
-77 verbose rebuild bundle C:\Users\Dagur\WebstormProjects\project2\node_modules\karma-phantomjs-launcher
-78 info build C:\Users\Dagur\WebstormProjects\project2\node_modules\karma-phantomjs-launcher
-79 info preinstall karma-phantomjs-launcher@0.1.4
-80 verbose linkStuff [ false,
-80 verbose linkStuff   false,
-80 verbose linkStuff   false,
-80 verbose linkStuff   'C:\\Users\\Dagur\\WebstormProjects\\project2\\node_modules' ]
-81 info linkStuff karma-phantomjs-launcher@0.1.4
-82 verbose linkBins karma-phantomjs-launcher@0.1.4
-83 verbose linkMans karma-phantomjs-launcher@0.1.4
-84 verbose rebuildBundles karma-phantomjs-launcher@0.1.4
-85 verbose rebuildBundles [ '.bin', 'phantomjs' ]
-86 info install karma-phantomjs-launcher@0.1.4
-87 info postinstall karma-phantomjs-launcher@0.1.4
-88 verbose rebuild bundle C:\Users\Dagur\WebstormProjects\project2\node_modules\karma-requirejs
-89 info build C:\Users\Dagur\WebstormProjects\project2\node_modules\karma-requirejs
-90 info preinstall karma-requirejs@0.2.2
-91 verbose linkStuff [ false,
-91 verbose linkStuff   false,
-91 verbose linkStuff   false,
-91 verbose linkStuff   'C:\\Users\\Dagur\\WebstormProjects\\project2\\node_modules' ]
-92 info linkStuff karma-requirejs@0.2.2
-93 verbose linkBins karma-requirejs@0.2.2
-94 verbose linkMans karma-requirejs@0.2.2
-95 verbose rebuildBundles karma-requirejs@0.2.2
-96 info install karma-requirejs@0.2.2
-97 info postinstall karma-requirejs@0.2.2
-98 verbose rebuild bundle C:\Users\Dagur\WebstormProjects\project2\node_modules\karma-script-launcher
-99 info build C:\Users\Dagur\WebstormProjects\project2\node_modules\karma-script-launcher
-100 info preinstall karma-script-launcher@0.1.0
-101 verbose linkStuff [ false,
-101 verbose linkStuff   false,
-101 verbose linkStuff   false,
-101 verbose linkStuff   'C:\\Users\\Dagur\\WebstormProjects\\project2\\node_modules' ]
-102 info linkStuff karma-script-launcher@0.1.0
-103 verbose linkBins karma-script-launcher@0.1.0
-104 verbose linkMans karma-script-launcher@0.1.0
-105 verbose rebuildBundles karma-script-launcher@0.1.0
-106 info install karma-script-launcher@0.1.0
-107 info postinstall karma-script-launcher@0.1.0
-108 verbose rebuild bundle C:\Users\Dagur\WebstormProjects\project2\node_modules\requirejs
-109 info build C:\Users\Dagur\WebstormProjects\project2\node_modules\requirejs
-110 info preinstall requirejs@2.1.16
-111 verbose linkStuff [ false,
-111 verbose linkStuff   false,
-111 verbose linkStuff   false,
-111 verbose linkStuff   'C:\\Users\\Dagur\\WebstormProjects\\project2\\node_modules' ]
-112 info linkStuff requirejs@2.1.16
-113 verbose linkBins requirejs@2.1.16
-114 verbose link bins [ { 'r.js': './bin/r.js' },
-114 verbose link bins   'C:\\Users\\Dagur\\WebstormProjects\\project2\\node_modules\\.bin',
-114 verbose link bins   false ]
-115 verbose linkMans requirejs@2.1.16
-116 verbose rebuildBundles requirejs@2.1.16
-117 info install requirejs@2.1.16
-118 info postinstall requirejs@2.1.16
-119 info install angular-seed@0.0.0
-120 info postinstall angular-seed@0.0.0
-121 verbose unsafe-perm in lifecycle true
-122 info angular-seed@0.0.0 Failed to exec postinstall script
-123 error angular-seed@0.0.0 postinstall: `bower install`
-123 error Exit status 1
-124 error Failed at the angular-seed@0.0.0 postinstall script.
-124 error This is most likely a problem with the angular-seed package,
-124 error not with npm itself.
-124 error Tell the author that this fails on your system:
-124 error     bower install
-124 error You can get their info via:
-124 error     npm owner ls angular-seed
-124 error There is likely additional logging output above.
-125 error System Windows_NT 6.2.9200
-126 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
-127 error cwd C:\Users\Dagur\WebstormProjects\project2
-128 error node -v v0.10.35
-129 error npm -v 1.4.28
-130 error code ELIFECYCLE
-131 verbose exit [ 1, true ]
+4 warn package.json chatserver@0.0.1 No repository field.
+5 warn package.json karma-chrome-launcher@0.1.7 No README data
+6 warn package.json karma-firefox-launcher@0.1.4 No README data
+7 warn package.json karma-phantomjs-launcher@0.1.4 No README data
+8 verbose readDependencies using package.json deps
+9 verbose cache add [ 'socket.io-client@1.0.4.', null ]
+10 verbose cache add name=undefined spec="socket.io-client@1.0.4." args=["socket.io-client@1.0.4.",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'socket.io-client@1.0.4.',
+11 verbose parsed url   path: 'socket.io-client@1.0.4.',
+11 verbose parsed url   href: 'socket.io-client@1.0.4.' }
+12 verbose cache add name="socket.io-client" spec="1.0.4." args=["socket.io-client","1.0.4."]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: '1.0.4.',
+13 verbose parsed url   path: '1.0.4.',
+13 verbose parsed url   href: '1.0.4.' }
+14 verbose addNamed [ 'socket.io-client', '1.0.4.' ]
+15 verbose addNamed [ null, null ]
+16 silly lockFile ccb03503-socket-io-client-1-0-4 socket.io-client@1.0.4.
+17 verbose lock socket.io-client@1.0.4. C:\Users\Dagur\AppData\Roaming\npm-cache\ccb03503-socket-io-client-1-0-4.lock
+18 info addNameTag [ 'socket.io-client', '1.0.4.' ]
+19 verbose request where is /socket.io-client
+20 verbose request registry https://registry.npmjs.org/
+21 verbose request id 1b776e8b4485d2e8
+22 verbose url raw /socket.io-client
+23 verbose url resolving [ 'https://registry.npmjs.org/', './socket.io-client' ]
+24 verbose url resolved https://registry.npmjs.org/socket.io-client
+25 verbose request where is https://registry.npmjs.org/socket.io-client
+26 info trying registry request attempt 1 at 13:39:19
+27 verbose etag "ERLWAYZCU5OZ2RR0TIITH87TE"
+28 http GET https://registry.npmjs.org/socket.io-client
+29 http 304 https://registry.npmjs.org/socket.io-client
+30 silly registry.get cb [ 304,
+30 silly registry.get   { date: 'Thu, 19 Feb 2015 13:39:16 GMT',
+30 silly registry.get     server: 'Apache',
+30 silly registry.get     via: '1.1 varnish',
+30 silly registry.get     'last-modified': 'Thu, 19 Feb 2015 13:39:16 GMT',
+30 silly registry.get     'cache-control': 'max-age=60',
+30 silly registry.get     etag: '"ERLWAYZCU5OZ2RR0TIITH87TE"',
+30 silly registry.get     age: '43',
+30 silly registry.get     'x-served-by': 'cache-fra1235-FRA',
+30 silly registry.get     'x-cache': 'HIT',
+30 silly registry.get     'x-cache-hits': '1',
+30 silly registry.get     'x-timer': 'S1424353156.662994,VS0,VE0',
+30 silly registry.get     vary: 'Accept',
+30 silly registry.get     'content-length': '0',
+30 silly registry.get     'keep-alive': 'timeout=10, max=50',
+30 silly registry.get     connection: 'Keep-Alive' } ]
+31 verbose etag https://registry.npmjs.org/socket.io-client from cache
+32 silly lockFile ccb03503-socket-io-client-1-0-4 socket.io-client@1.0.4.
+33 silly lockFile ccb03503-socket-io-client-1-0-4 socket.io-client@1.0.4.
+34 error notarget No compatible version found: socket.io-client@'1.0.4.'
+34 error notarget Valid install targets:
+34 error notarget ["0.7.0","0.7.1","0.7.2","0.7.3","0.7.4","0.7.5","0.7.9","0.7.10","0.7.11","0.8.0","0.8.1","0.8.2","0.8.3","0.8.4","0.8.5","0.8.6","0.8.7","0.9.0","0.9.1","0.9.1-1","0.9.2","0.9.3","0.9.4","0.9.5","0.9.6","0.9.7","0.9.8","0.9.9","0.9.10","0.9.11","0.9.15","0.9.16","1.0.0-pre","1.0.0-pre2","1.0.0-pre3","1.0.0-pre4","1.0.0-pre5","0.9.17","1.0.1","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.1.0","1.2.0","1.2.1","1.3.0","1.3.1","1.3.2","1.3.3","1.3.4"]
+34 error notarget
+34 error notarget This is most likely not a problem with npm itself.
+34 error notarget In most cases you or one of your dependencies are requesting
+34 error notarget a package version that doesn't exist.
+35 error System Windows_NT 6.2.9200
+36 error command "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "socket.io-client@1.0.4."
+37 error cwd C:\Users\Dagur\Documents\GitHub\Vefforitun2\project2
+38 error node -v v0.10.35
+39 error npm -v 1.4.28
+40 error code ETARGET
+41 verbose exit [ 1, true ]
