@@ -17,7 +17,7 @@ socket.on('userlist', function(userlist){
     console.log(userlist);
 });
 
-angular.module("myApp").controller("HomeController", function($scope, $rootScope, $location){
+angular.module("myApp").controller("HomeController", function($scope, $rootScope, $location ){
     $scope.newuser = function(){
         socket.emit('adduser', $scope.name, function(success){
             if(success){
@@ -28,6 +28,7 @@ angular.module("myApp").controller("HomeController", function($scope, $rootScope
                 socket.emit('joinroom', joinObj, function (success) {
                     if(success){
                         console.log("joined room");
+                        $rootScope.name = $scope.name;
                         $location.path('/view1');
                     }
                 });

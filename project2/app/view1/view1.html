@@ -1,4 +1,5 @@
 <div ng-app="" ng-controller="ChatCtrl">
+    <p> you are logged in as {{name}}</p>
     <input type="text" ng-model="roomName">
     <button type="submit" ng-click="newRoom()">new room</button>
     <!-- chatbox -->
@@ -7,7 +8,10 @@
         <input type="text" ng-model="msg">
         <button type="submit">send</button>
     </form>
-    <select ng-model="roomlist" ng-options="opt as opt for opt in options">
+    <p>select room</p>
+    <select ng-model="roomlis" ng-change="joinRoom()">
+        <option ng-repeat="(key, value) in roomlist">{{key}}</option>
     </select>
+    <p>currently in room {{curroom}}</p>
 
 </div>
